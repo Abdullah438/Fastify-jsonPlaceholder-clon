@@ -1,154 +1,247 @@
 {
-	"id": "c2108969-25b2-4919-b4a8-e43f2ce2b979",
-	"name": "JSOPlaceholder",
-	"timestamp": "2023-05-14T09:32:28.883Z",
-	"collection_id": "10805655-081b96e1-3c86-45e0-a315-e5832154a9bf",
-	"folder_id": 0,
-	"environment_id": "0",
-	"totalPass": 0,
-	"delay": 0,
-	"persist": true,
-	"status": "finished",
-	"startedAt": "2023-05-14T09:32:20.721Z",
-	"totalFail": 0,
-	"results": [
+	"info": {
+		"_postman_id": "081b96e1-3c86-45e0-a315-e5832154a9bf",
+		"name": "JSOPlaceholder",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10805655"
+	},
+	"item": [
 		{
-			"id": "cde3e92c-690a-4635-b863-d80b96b55c7a",
 			"name": "AddNewPost",
-			"url": "http://127.0.0.1:3000/posts",
-			"time": 2501,
-			"responseCode": {
-				"code": 200,
-				"name": "OK"
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": 1,\r\n    \"title\": \"The post I added myself\",\r\n    \"body\": \"quia et suscipit\\nsuscipit recusandae consequuntur expedita et cum\\nreprehenderit molestiae ut ut quas totam\\nnostrum rerum est autem sunt rem eveniet architecto\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/posts",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"posts"
+					]
+				}
 			},
-			"tests": {},
-			"testPassFailCounts": {},
-			"times": [
-				2501
-			],
-			"allTests": [
-				{}
-			]
+			"response": []
 		},
 		{
-			"id": "b3acb1ef-55df-4951-8d52-09dd71d799aa",
 			"name": "GetPosts",
-			"url": "http://127.0.0.1:3000/posts?limit=10&start=1",
-			"time": 1914,
-			"responseCode": {
-				"code": 200,
-				"name": "OK"
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
 			},
-			"tests": {},
-			"testPassFailCounts": {},
-			"times": [
-				1914
-			],
-			"allTests": [
-				{}
-			]
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/posts?limit=10&start=1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"posts"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "10"
+						},
+						{
+							"key": "start",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
 		},
 		{
-			"id": "dc90b2f8-da9c-40f1-8262-3491592189f9",
 			"name": "GetPostById",
-			"url": "http://127.0.0.1:3000/posts/10",
-			"time": 659,
-			"responseCode": {
-				"code": 200,
-				"name": "OK"
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
 			},
-			"tests": {},
-			"testPassFailCounts": {},
-			"times": [
-				659
-			],
-			"allTests": [
-				{}
-			]
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/posts/10",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"posts",
+						"10"
+					]
+				}
+			},
+			"response": []
 		},
 		{
-			"id": "22180bd2-ad0f-4b2d-9c24-67026dcdbcd9",
 			"name": "DeletePost",
-			"url": "http://127.0.0.1:3000/posts/1",
-			"time": 755,
-			"responseCode": {
-				"code": 200,
-				"name": "OK"
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"40\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/posts/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"posts",
+						"1"
+					]
+				}
 			},
-			"tests": {},
-			"testPassFailCounts": {},
-			"times": [
-				755
-			],
-			"allTests": [
-				{}
-			]
+			"response": []
 		},
 		{
-			"id": "41b5d175-89ef-4395-be5e-537500398d78",
 			"name": "UpdatePost",
-			"url": "http://127.0.0.1:3000/posts/10",
-			"time": 1140,
-			"responseCode": {
-				"code": 200,
-				"name": "OK"
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": 1,\r\n    \"id\": 10,\r\n    \"title\": \"You know if you know\",\r\n    \"body\": \"quia et suscipit\\nsuscipit recusandae consequuntur expedita et cum\\nreprehenderit molestiae ut ut quas totam\\nnostrum rerum est autem sunt rem eveniet architecto\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/posts/10",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"posts",
+						"10"
+					]
+				}
 			},
-			"tests": {},
-			"testPassFailCounts": {},
-			"times": [
-				1140
-			],
-			"allTests": [
-				{}
-			]
+			"response": []
 		},
 		{
-			"id": "8316c6b9-7972-42e6-a007-96e850ee3c37",
 			"name": "GetComments",
-			"url": "http://127.0.0.1:3000/comments?postId=1&limit=5&start=4",
-			"time": 280,
-			"responseCode": {
-				"code": 200,
-				"name": "OK"
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3000/comments?postId=1&limit=5&start=4",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"comments"
+					],
+					"query": [
+						{
+							"key": "postId",
+							"value": "1"
+						},
+						{
+							"key": "limit",
+							"value": "5"
+						},
+						{
+							"key": "start",
+							"value": "4"
+						}
+					]
+				}
 			},
-			"tests": {},
-			"testPassFailCounts": {},
-			"times": [
-				280
-			],
-			"allTests": [
-				{}
-			]
+			"response": []
 		}
 	],
-	"count": 1,
-	"totalTime": 7249,
-	"collection": {
-		"requests": [
-			{
-				"id": "cde3e92c-690a-4635-b863-d80b96b55c7a",
-				"method": "POST"
-			},
-			{
-				"id": "b3acb1ef-55df-4951-8d52-09dd71d799aa",
-				"method": "GET"
-			},
-			{
-				"id": "dc90b2f8-da9c-40f1-8262-3491592189f9",
-				"method": "GET"
-			},
-			{
-				"id": "22180bd2-ad0f-4b2d-9c24-67026dcdbcd9",
-				"method": "DELETE"
-			},
-			{
-				"id": "41b5d175-89ef-4395-be5e-537500398d78",
-				"method": "PATCH"
-			},
-			{
-				"id": "8316c6b9-7972-42e6-a007-96e850ee3c37",
-				"method": "GET"
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
 			}
-		]
-	}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://127.0.0.1:3000",
+			"type": "string"
+		}
+	]
 }
