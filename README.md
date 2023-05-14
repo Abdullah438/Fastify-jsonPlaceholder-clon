@@ -7,5 +7,6 @@
 |Fastify|
 |TypeScript|
 |JsonPlaceholderAPI|
+**Just hit 'npm start' and start testing it :)**
 
 > A postman collection is given in 'postman' folder.

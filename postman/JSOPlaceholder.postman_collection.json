@@ -21,15 +21,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:3000/posts",
-					"protocol": "http",
+					"raw": "{{base_url}}/posts",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
+						"{{base_url}}"
 					],
-					"port": "3000",
 					"path": [
 						"posts"
 					]
@@ -55,15 +50,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:3000/posts?limit=10&start=1",
-					"protocol": "http",
+					"raw": "{{base_url}}/posts?limit=10&start=1",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
+						"{{base_url}}"
 					],
-					"port": "3000",
 					"path": [
 						"posts"
 					],
@@ -99,15 +89,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:3000/posts/10",
-					"protocol": "http",
+					"raw": "{{base_url}}/posts/10",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
+						"{{base_url}}"
 					],
-					"port": "3000",
 					"path": [
 						"posts",
 						"10"
@@ -131,15 +116,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:3000/posts/1",
-					"protocol": "http",
+					"raw": "{{base_url}}/posts/1",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
+						"{{base_url}}"
 					],
-					"port": "3000",
 					"path": [
 						"posts",
 						"1"
@@ -163,15 +143,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:3000/posts/10",
-					"protocol": "http",
+					"raw": "{{base_url}}/posts/10",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
+						"{{base_url}}"
 					],
-					"port": "3000",
 					"path": [
 						"posts",
 						"10"
@@ -186,15 +161,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://127.0.0.1:3000/comments?postId=1&limit=5&start=4",
-					"protocol": "http",
+					"raw": "{{base_url}}/comments?postId=1&limit=5&start=4",
 					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
+						"{{base_url}}"
 					],
-					"port": "3000",
 					"path": [
 						"comments"
 					],
